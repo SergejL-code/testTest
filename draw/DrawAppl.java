@@ -4,6 +4,8 @@ import java.util.stream.Stream;
 
 public class DrawAppl {
 
+    // this is actual version!
+
     // заводим статические константы
     private static final int MIN = 1;
     private static final int MAX = 5;
