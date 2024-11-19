@@ -4,16 +4,19 @@ import java.util.stream.Stream;
 
 public class DrawAppl {
 
+    // заводим статические константы
     private static final int MIN = 1;
     private static final int MAX = 5;
     private static final int N_NUMBERS = 4;
 
     public static void main(String[] args) {
 
+        // get random numbers as Stream
         Stream<Integer> draw = getRandomNumbers(MIN, MAX, N_NUMBERS)
                 .distinct()
                 .limit(4);
 
+        // print numbers
         draw.forEach(System.out::println);
 
     }
